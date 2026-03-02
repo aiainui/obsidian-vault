@@ -1,0 +1,9 @@
+{
+  "citationExportFormat": "APA",
+  "literatureNoteTitleTemplate": "{{title}}",
+  "literatureNoteFolder": "Papers",
+  "literatureNoteContentTemplate": "---\n---\n\n# {{title}}\n\n## 基本信息\n- 标题: {{title}}\n- 作者: {{authorString}}\n- 年份: {{year}}\n- DOI: {{DOI}}\n- URL: {{URL}}\n\n## 摘要\n{{abstractNote}}\n\n## 笔记\n\n## 引用\n```\n{{biblatex}}\n```",
+  "markdownCitationTemplate": "[@{{citekey}}]",
+  "alternativeMarkdownCitationTemplate": "@{{citekey}}",
+  "citationExportPath": ""
+}
