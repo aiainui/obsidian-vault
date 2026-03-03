@@ -3,18 +3,17 @@
   "title": "Summarize content",
   "titleGenerationStatus": "success",
   "createdAt": 1772509632853,
-  "updatedAt": 1772509698897,
-  "lastResponseAt": 1772509698897,
+  "updatedAt": 1772509843845,
+  "lastResponseAt": 1772509843845,
   "sessionId": "a723e0f7-ee69-4ecf-b758-d0f6718ef08e",
   "sdkSessionId": "a723e0f7-ee69-4ecf-b758-d0f6718ef08e",
-  "currentNote": "Agents/claude code/cc安装与启动.md",
   "usage": {
     "model": "haiku",
-    "inputTokens": 152,
-    "cacheCreationInputTokens": 452,
-    "cacheReadInputTokens": 17340,
+    "inputTokens": 144,
+    "cacheCreationInputTokens": 490,
+    "cacheReadInputTokens": 18401,
     "contextWindow": 200000,
-    "contextTokens": 17944,
-    "percentage": 9
+    "contextTokens": 19035,
+    "percentage": 10
   }
 }
