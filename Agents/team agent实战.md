@@ -5,7 +5,7 @@
 brew install tmux
 # 配置文件
 vim 
-
+```
 tmux source-file ~/.tmux.conf
 
 export https_proxy=http://127.0.0.1:7897
@@ -15,6 +15,7 @@ claude --teammate-mode tmux
 
 export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
 claude --teammate-mode tmux
+```
 
 # 分屏模式（可选）
 ```
@@ -38,6 +39,7 @@ claude --teammate-mode tmux
 1.设计一个标注网站支持数据的标注，数据为文本数据，除了文本，还有其他一些描述信息，比如；ID，来源等等
 2.标注内容为文本是否有效即可
 你可以先试用 /brainstorming  skill来先确定任务，请一次性多问问题，不要一个问题问一次。
+
 
 1.去掉上侧的数据集和标注按钮，让其仅在数据集列表的右侧展示；
 2.为admin增加权限控制模块，可随时增加人员，并为人员赋予权限的功能
