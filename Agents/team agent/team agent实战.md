@@ -1,18 +1,30 @@
 
-
 # 安装与配置tmux
 
-brew install tmux
-# 配置文件
-vim 
 ```
-tmux source-file ~/.tmux.conf
+brew install tmux
+```
 
+# 配置文件
+## tmux配置
+- 
+```
+# chuan'jia增加如下配置
+
+# 激活配置
+
+tmux source-file ~/.tmux.conf
+```
+
+
+```
+
+```
+- 配置代理：其他详见[[cc安装与启动]]
+- 
+```
 export https_proxy=http://127.0.0.1:7897
 export http_proxy=http://127.0.0.1:7897
-export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
-claude --teammate-mode tmux
-
 export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
 claude --teammate-mode tmux
 ```
