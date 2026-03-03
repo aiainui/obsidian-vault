@@ -3,17 +3,17 @@
   "title": "Summarize content",
   "titleGenerationStatus": "success",
   "createdAt": 1772509632853,
-  "updatedAt": 1772522473160,
-  "lastResponseAt": 1772522473160,
+  "updatedAt": 1772522800319,
+  "lastResponseAt": 1772522800318,
   "sessionId": "a723e0f7-ee69-4ecf-b758-d0f6718ef08e",
   "sdkSessionId": "a723e0f7-ee69-4ecf-b758-d0f6718ef08e",
   "usage": {
     "model": "haiku",
-    "inputTokens": 856,
-    "cacheCreationInputTokens": 78,
-    "cacheReadInputTokens": 22591,
+    "inputTokens": 144,
+    "cacheCreationInputTokens": 765,
+    "cacheReadInputTokens": 22659,
     "contextWindow": 200000,
-    "contextTokens": 23525,
+    "contextTokens": 23568,
     "percentage": 12
   }
 }
