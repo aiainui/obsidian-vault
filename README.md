@@ -3,11 +3,11 @@
 ## 目录
 
 ### Agents
-- [[Agents/SocialKit]]
-- [[Agents/claude code]]
-- [[Agents/open code]]
+- [[Agents/SocialKit/README|SocialKit]]
+- [[Agents/claude code/README|Claude Code]]
+- [[Agents/open code/README|Open Code]]
+- [[Agents/team agent/README|Team Agent]]
 - [[Agents/providers]]
-- [[Agents/team agent]]
 - [[Agents/travily介绍]]
 - [[Agents/xint教程]]
 - [[Agents/小龙虾+skill自动总结同步飞书]]
