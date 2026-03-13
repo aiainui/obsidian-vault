@@ -1,0 +1,21 @@
+# Ignore OpenClaw specific files
+.clawhub/
+.openclaw/
+logs/
+memory/
+scripts/
+skills/
+
+# System files
+.DS_Store
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Obsidian
+.obsidian/
