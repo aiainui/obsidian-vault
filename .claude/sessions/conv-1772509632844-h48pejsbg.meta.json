@@ -1,0 +1,19 @@
+{
+  "id": "conv-1772509632844-h48pejsbg",
+  "title": "Summarize content",
+  "titleGenerationStatus": "success",
+  "createdAt": 1772509632853,
+  "updatedAt": 1772604886179,
+  "lastResponseAt": 1772604886179,
+  "sessionId": "a723e0f7-ee69-4ecf-b758-d0f6718ef08e",
+  "sdkSessionId": "a723e0f7-ee69-4ecf-b758-d0f6718ef08e",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 186,
+    "cacheCreationInputTokens": 442,
+    "cacheReadInputTokens": 33531,
+    "contextWindow": 200000,
+    "contextTokens": 34159,
+    "percentage": 17
+  }
+}

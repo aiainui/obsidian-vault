@@ -1,0 +1,607 @@
+@misc{
+  title = {Register},
+  urldate = {2025-11-23},
+  howpublished = {https://www.zotero.org/user/register},
+  file = {files/8/register.html}
+}
+
+@misc{
+  title = {Estimating {{LLM Consistency}}: {{A User Baseline}} vs {{Surrogate Metrics}}},
+  shorttitle = {Estimating {{LLM Consistency}}},
+  author = {Wu, Xiaoyuan and Lin, Weiran and Akgul, Omer and Bauer, Lujo},
+  year = 2025,
+  month = oct,
+  number = {arXiv:2505.23799},
+  eprint = {2505.23799},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2505.23799},
+  urldate = {2025-11-23},
+  abstract = {Large language models (LLMs) are prone to hallucinations and sensitive to prompt perturbations, often resulting in inconsistent or unreliable generated text. Different methods have been proposed to mitigate such hallucinations and fragility, one of which is to measure the consistency of LLM responses---the model's confidence in the response or likelihood of generating a similar response when resampled. In previous work, measuring LLM response consistency often relied on calculating the probability of a response appearing within a pool of resampled responses, analyzing internal states, or evaluating logits of resopnses. However, it was not clear how well these approaches approximated users' perceptions of consistency of LLM responses. To find out, we performed a user study (n = 2, 976) demonstrating that current methods for measuring LLM response consistency typically do not align well with humans' perceptions of LLM consistency. We propose a logit-based ensemble method for estimating LLM consistency and show that our method matches the performance of the bestperforming existing metric in estimating human ratings of LLM consistency. Our results suggest that methods for estimating LLM consistency without human evaluation are sufficiently imperfect to warrant broader use of evaluation with human input; this would avoid misjudging the adequacy of models because of the imperfections of automated consistency metrics.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Human-Computer Interaction,Computer Science - Machine Learning},
+  file = {files/6/Wu 等 - 2025 - Estimating LLM Consistency A User Baseline vs Surrogate Metrics.pdf}
+}
+
+@misc{
+  title = {Zotero \textbar{} {{Your}} Personal Research Assistant},
+  urldate = {2025-11-23},
+  howpublished = {https://www.zotero.org/},
+  file = {files/4/www.zotero.org.html}
+}
+
+@article{
+  title = {{{DeepSeekMath-V2}}: {{Towards Self-Verifiable Mathematical Reasoning}}},
+  author = {Shao, Zhihong and Luo, Yuxiang and Lu, Chengda and Ren, Z Z and Hu, Jiewen and Ye, Tian and Gou, Zhibin and Ma, Shirong and Zhang, Xiaokang},
+  abstract = {Large language models have made significant progress in mathematical reasoning, which serves as an important testbed for AI and could impact scientific research if further advanced. By scaling reasoning with reinforcement learning that rewards correct final answers, LLMs have improved from poor performance to saturating quantitative reasoning competitions like AIME and HMMT in one year. However, this approach faces fundamental limitations. Pursuing higher final answer accuracy doesn't address a key issue: correct answers don't guarantee correct reasoning. Moreover, many mathematical tasks like theorem proving require rigorous step-bystep derivation rather than numerical answers, making final answer rewards inapplicable. To push the limits of deep reasoning, we believe it is necessary to verify the comprehensiveness and rigor of mathematical reasoning. Self-verification is particularly important for scaling testtime compute, especially for open problems without known solutions. Towards self-verifiable mathematical reasoning, we investigate how to train an accurate and faithful LLM-based verifier for theorem proving. We then train a proof generator using the verifier as the reward model, and incentivize the generator to identify and resolve as many issues as possible in their own proofs before finalizing them. To maintain the generation-verification gap as the generator becomes stronger, we propose to scale verification compute to automatically label new hardto-verify proofs, creating training data to further improve the verifier. Our resulting model, DeepSeekMath-V2, demonstrates strong theorem-proving capabilities, achieving gold-level scores on IMO 2025 and CMO 2024 and a near-perfect 118/120 on Putnam 2024 with scaled testtime compute. While much work remains, these results suggest that self-verifiable mathematical reasoning is a feasible research direction that may help develop more capable mathematical AI systems.},
+  langid = {english},
+  file = {files/27/Shao 等 - DeepSeekMath-V2 Towards Self-Verifiable Mathematical Reasoning.pdf}
+}
+
+@misc{
+  title = {{{这些大神在Meta的论文看一篇少一篇了}}\_澎湃号{$\cdot$}湃客\_澎湃新闻-{{The Paper}}},
+  urldate = {2025-12-03},
+  abstract = {梦晨发自凹非寺 量子位\textbar 公众号QbitAI 离开Meta的大佬们，留下作品还在陆续发表，今天轮到田渊栋。 这次他带领团队把目光投向了大模型强化学习训练中一个令人},
+  howpublished = {https://www.thepaper.cn/newsDetail\_forward\_31983296},
+  langid = {american},
+  file = {files/79/newsDetail_forward_31983296.html}
+}
+
+@misc{
+  title = {The {{Path Not Taken}}: {{RLVR Provably Learns Off}} the {{Principals}}},
+  shorttitle = {The {{Path Not Taken}}},
+  author = {Zhu, Hanqing and Zhang, Zhenyu and Huang, Hanxian and Su, DiJia and Liu, Zechun and Zhao, Jiawei and Fedorov, Igor and Pirsiavash, Hamed and Sha, Zhizhou and Lee, Jinwon and Pan, David Z. and Wang, Zhangyang and Tian, Yuandong and Tai, Kai Sheng},
+  year = 2025,
+  month = nov,
+  number = {arXiv:2511.08567},
+  eprint = {2511.08567},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2511.08567},
+  urldate = {2025-12-03},
+  abstract = {Reinforcement Learning with Verifiable Rewards (RLVR) reliably improves the reasoning performance of large language models, yet it appears to modify only a small fraction of parameters. We revisit this paradox and show that sparsity is a surface artifact of a model-conditioned optimization bias: for a fixed pretrained model, updates consistently localize to preferred parameter regions, highly consistent across runs and largely invariant to datasets and RL recipes. We mechanistically explain these dynamics with a Three-Gate Theory: Gate I (KL Anchor) imposes a KL-constrained update; Gate II (Model Geometry) steers the step off principal directions into low-curvature, spectrum-preserving subspaces; and Gate III (Precision) hides micro-updates in non-preferred regions, making the off-principal bias appear as sparsity. We then validate this theory and, for the first time, provide a parameter-level characterization of RLVR's learning dynamics: RLVR learns off principal directions in weight space, achieving gains via minimal spectral drift, reduced principal-subspace rotation, and off-principal update alignment. In contrast, SFT targets principal weights, distorts the spectrum, and even lags RLVR. Together, these results provide the first parameter-space account of RLVR's training dynamics, revealing clear regularities in how parameters evolve. Crucially, we show that RL operates in a distinct optimization regime from SFT, so directly adapting SFT-era parameter-efficient fine-tuning (PEFT) methods can be flawed, as evidenced by our case studies on advanced sparse fine-tuning and LoRA variants. We hope this work charts a path toward a white-box understanding of RLVR and the design of geometry-aware, RLVR-native learning algorithms, rather than repurposed SFT-era heuristics.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {files/77/2511.html}
+}
+
+@misc{
+  title = {Introducing {{LangSmith}}'s {{No Code Agent Builder}}},
+  year = 2025,
+  month = oct,
+  journal = {LangChain Blog},
+  urldate = {2025-12-03},
+  abstract = {By Brace Sproul and Sam Crowder Today, we're expanding who can build agents beyond developers. While a lot of the highest volume, customer-facing agents will be built by technical teams, nearly every business user has use cases for agentic applications in their daily routines. Our new LangSmith Agent Builder},
+  howpublished = {https://blog.langchain.com/langsmith-agent-builder/},
+  langid = {english},
+  file = {files/76/langsmith-agent-builder.html}
+}
+
+@misc{
+  title = {{{表格类数据神器TabPFN的小白理解}} - 知乎},
+  urldate = {2025-12-04},
+  howpublished = {https://zhuanlan.zhihu.com/p/1930945451869307286},
+  file = {files/75/1930945451869307286.html}
+}
+
+@article{
+  title = {Accurate Predictions on Small Data with a Tabular Foundation Model},
+  author = {Hollmann, Noah and M{\"u}ller, Samuel and Purucker, Lennart and Krishnakumar, Arjun and K{\"o}rfer, Max and Hoo, Shi Bin and Schirrmeister, Robin Tibor and Hutter, Frank},
+  year = 2025,
+  month = jan,
+  journal = {Nature},
+  volume = {637},
+  number = {8045},
+  pages = {319--326},
+  issn = {0028-0836, 1476-4687},
+  doi = {10.1038/s41586-024-08328-6},
+  urldate = {2025-12-04},
+  abstract = {Abstract                            Tabular data, spreadsheets organized in rows and columns, are ubiquitous across scientific fields, from biomedicine to particle physics to economics and climate science               1,2               . The fundamental prediction task of filling in missing values of a label column based on the rest of the columns is essential for various applications as diverse as biomedical risk models, drug discovery and materials science. Although deep learning has revolutionized learning from raw data and led to numerous high-profile success stories               3--5               , gradient-boosted decision trees               6--9               have dominated tabular data for the past 20\,years. Here we present the Tabular Prior-data Fitted Network (TabPFN), a tabular foundation model that outperforms all previous methods on datasets with up to 10,000 samples by a wide margin, using substantially less training time. In 2.8\,s, TabPFN outperforms an ensemble of the strongest baselines tuned for 4\,h in a classification setting. As a generative transformer-based foundation model, this model also allows fine-tuning, data generation, density estimation and learning reusable embeddings. TabPFN is a~learning algorithm that is itself learned across millions of synthetic datasets, demonstrating the power of this approach for algorithm development. By improving modelling abilities across diverse fields, TabPFN has the potential to accelerate scientific discovery and enhance important decision-making in various domains.},
+  langid = {english},
+  file = {files/74/Hollmann 等 - 2025 - Accurate predictions on small data with a tabular foundation model.pdf}
+}
+
+@misc{
+  title = {Stabilizing {{Reinforcement Learning}} with {{LLMs}}: {{Formulation}} and {{Practices}}},
+  shorttitle = {Stabilizing {{Reinforcement Learning}} with {{LLMs}}},
+  author = {Zheng, Chujie and Dang, Kai and Yu, Bowen and Li, Mingze and Jiang, Huiqiang and Lin, Junrong and Liu, Yuqiong and Lin, Hao and Wu, Chencan and Hu, Feng and Yang, An and Zhou, Jingren and Lin, Junyang},
+  year = 2025,
+  month = dec,
+  number = {arXiv:2512.01374},
+  eprint = {2512.01374},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2512.01374},
+  urldate = {2025-12-04},
+  abstract = {This paper proposes a novel formulation for reinforcement learning (RL) with large language models, explaining why and under what conditions the true sequence-level reward can be optimized via a surrogate token-level objective in policy gradient methods such as REINFORCE. Specifically, through a first-order approximation, we show that this surrogate becomes increasingly valid only when both the training-inference discrepancy and policy staleness are minimized. This insight provides a principled explanation for the crucial role of several widely adopted techniques in stabilizing RL training, including importance sampling correction, clipping, and particularly Routing Replay for Mixture-of-Experts (MoE) models. Through extensive experiments with a 30B MoE model totaling hundreds of thousands of GPU hours, we show that for on-policy training, the basic policy gradient algorithm with importance sampling correction achieves the highest training stability. When off-policy updates are introduced to accelerate convergence, combining clipping and Routing Replay becomes essential to mitigate the instability caused by policy staleness. Notably, once training is stabilized, prolonged optimization consistently yields comparable final performance regardless of cold-start initialization. We hope that the shared insights and the developed recipes for stable RL training will facilitate future research.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {files/73/Zheng 等 - 2025 - Stabilizing Reinforcement Learning with LLMs Formulation and Practices.pdf;files/72/2512.html}
+}
+
+@misc{
+  title = {A {{Technical Tour}} of the {{DeepSeek Models}} from {{V3}} to {{V3}}.2},
+  author = {PhD, Sebastian Raschka},
+  year = 2025,
+  month = jul,
+  urldate = {2025-12-04},
+  abstract = {Understanding How DeepSeek's Flagship Open-Weight Models Evolved},
+  howpublished = {https://magazine.sebastianraschka.com/p/technical-deepseek},
+  langid = {english},
+  file = {files/71/technical-deepseek.html}
+}
+
+@misc{
+  title = {Kimi {{Linear}}: {{An Expressive}}, {{Efficient Attention Architecture}}},
+  shorttitle = {Kimi {{Linear}}},
+  author = {Team, Kimi and Zhang, Yu and Lin, Zongyu and Yao, Xingcheng and Hu, Jiaxi and Meng, Fanqing and Liu, Chengyin and Men, Xin and Yang, Songlin and Li, Zhiyuan and Li, Wentao and Lu, Enzhe and Liu, Weizhou and Chen, Yanru and Xu, Weixin and Yu, Longhui and Wang, Yejie and Fan, Yu and Zhong, Longguang and Yuan, Enming and Zhang, Dehao and Zhang, Yizhi and Liu, T. Y. and Wang, Haiming and Fang, Shengjun and He, Weiran and Liu, Shaowei and Li, Yiwei and Su, Jianlin and Qiu, Jiezhong and Pang, Bo and Yan, Junjie and Jiang, Zhejun and Huang, Weixiao and Yin, Bohong and You, Jiacheng and Wei, Chu and Wang, Zhengtao and Hong, Chao and Chen, Yutian and Chen, Guanduo and Wang, Yucheng and Zheng, Huabin and Wang, Feng and Liu, Yibo and Dong, Mengnan and Zhang, Zheng and Pan, Siyuan and Wu, Wenhao and Wu, Yuhao and Guan, Longyu and Tao, Jiawen and Fu, Guohong and Xu, Xinran and Wang, Yuzhi and Lai, Guokun and Wu, Yuxin and Zhou, Xinyu and Yang, Zhilin and Du, Yulun},
+  year = 2025,
+  month = nov,
+  number = {arXiv:2510.26692},
+  eprint = {2510.26692},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2510.26692},
+  urldate = {2025-12-04},
+  abstract = {We introduce Kimi Linear, a hybrid linear attention architecture that, for the first time, outperforms full attention under fair comparisons across various scenarios -- including short-context, long-context, and reinforcement learning (RL) scaling regimes. At its core lies Kimi Delta Attention (KDA), an expressive linear attention module that extends Gated DeltaNet with a finer-grained gating mechanism, enabling more effective use of limited finite-state RNN memory. Our bespoke chunkwise algorithm achieves high hardware efficiency through a specialized variant of the Diagonal-Plus-Low-Rank (DPLR) transition matrices, which substantially reduces computation compared to the general DPLR formulation while remaining more consistent with the classical delta rule. We pretrain a Kimi Linear model with 3B activated parameters and 48B total parameters, based on a layerwise hybrid of KDA and Multi-Head Latent Attention (MLA). Our experiments show that with an identical training recipe, Kimi Linear outperforms full MLA with a sizeable margin across all evaluated tasks, while reducing KV cache usage by up to 75\% and achieving up to 6 times decoding throughput for a 1M context. These results demonstrate that Kimi Linear can be a drop-in replacement for full attention architectures with superior performance and efficiency, including tasks with longer input and output lengths. To support further research, we open-source the KDA kernel and vLLM implementations, and release the pre-trained and instruction-tuned model checkpoints.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {files/69/Team 等 - 2025 - Kimi Linear An Expressive, Efficient Attention Architecture.pdf;files/68/2510.html}
+}
+
+@misc{
+  title = {Group {{Sequence Policy Optimization}}},
+  author = {Zheng, Chujie and Liu, Shixuan and Li, Mingze and Chen, Xiong-Hui and Yu, Bowen and Gao, Chang and Dang, Kai and Liu, Yuqiong and Men, Rui and Yang, An and Zhou, Jingren and Lin, Junyang},
+  year = 2025,
+  month = jul,
+  number = {arXiv:2507.18071},
+  eprint = {2507.18071},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2507.18071},
+  urldate = {2025-12-04},
+  abstract = {This paper introduces Group Sequence Policy Optimization (GSPO), our stable, efficient, and performant reinforcement learning algorithm for training large language models. Unlike previous algorithms that adopt token-level importance ratios, GSPO defines the importance ratio based on sequence likelihood and performs sequence-level clipping, rewarding, and optimization. We demonstrate that GSPO achieves superior training efficiency and performance compared to the GRPO algorithm, notably stabilizes Mixture-of-Experts (MoE) RL training, and has the potential for simplifying the design of RL infrastructure. These merits of GSPO have contributed to the remarkable improvements in the latest Qwen3 models.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {files/66/Zheng 等 - 2025 - Group Sequence Policy Optimization.pdf;files/67/2507.html}
+}
+
+@misc{
+  title = {{如何评价NeurIPS 2025论文Credal Transformer 对幻觉问题的解决思路？ - 栀染 的回答}},
+  journal = {知乎回答},
+  urldate = {2025-12-04},
+  abstract = {这下真利益相关了，因为我是第一作者之一。https://openreview.net/forum?id=XTM1BKeZa8现有的Transforme\dots},
+  howpublished = {https://www.zhihu.com/question/undefined/answer/1958644955556840445},
+  langid = {chinese},
+  file = {files/65/1958644955556840445.html}
+}
+
+@misc{
+  title = {{Workflow And Agents}},
+  journal = {Notion 上的``mirror-feeling-d80''},
+  urldate = {2025-12-08},
+  abstract = {A tool that connects everyday work into one space. It gives you and your teams AI tools---search, writing, note-taking---inside an all-in-one, flexible workspace.},
+  howpublished = {https://mirror-feeling-d80.notion.site/Workflow-And-Agents-17e808527b1780d792a0d934ce62bee6},
+  langid = {chinese},
+  file = {files/134/Workflow-And-Agents-17e808527b1780d792a0d934ce62bee6.html}
+}
+
+@misc{
+  title = {Deep {{Agents}} Overview},
+  journal = {Docs by LangChain},
+  urldate = {2025-12-09},
+  abstract = {Build agents that can plan, use subagents, and leverage file systems for complex tasks},
+  howpublished = {https://docs.langchain.com/oss/python/deepagents/overview},
+  langid = {english},
+  keywords = {Agent},
+  file = {files/133/overview.html}
+}
+
+@misc{
+  title = {{{ReAct之外的新范式}}！{{多个任务上达到SoTA}}，且效率更高},
+  author = {编辑部},
+  journal = {微信公众平台},
+  urldate = {2025-12-09},
+  howpublished = {https://mp.weixin.qq.com/s/W25XdTe8YY5fXOrAn\_hqSA},
+  file = {files/131/W25XdTe8YY5fXOrAn_hqSA.html}
+}
+
+@misc{
+  title = {Sandbagging Elicitation Auditing Team Internals Games Benign Demo Instilled Developers \textbar{} {{Cool Papers}} - {{Immersive Paper Discovery}}},
+  urldate = {2025-12-09},
+  howpublished = {https://papers.cool/arxiv/search?query=sandbagging,elicitation,auditing,team,internals,games,benign,demo,instilled,developers},
+  file = {files/130/search.html}
+}
+
+@misc{
+  title = {Do {{Generalisation Results Generalise}}?},
+  author = {Boglioni, Matteo and Sgobbi, Andrea and Tavernini, Gabriel and Rita, Francesco and Mosbach, Marius and Pimentel, Tiago},
+  year = 2025,
+  month = dec,
+  urldate = {2025-12-09},
+  abstract = {A large language model's (LLM's) out-of-distribution (OOD) generalisation ability is crucial to its deployment. Previous work assessing LLMs' generalisation performance, however, typically focuses on a single out-of-distribution dataset. This approach may fail to precisely evaluate the capabilities of the model, as the data shifts encountered once a model is deployed are much more diverse. In this work, we investigate whether OOD generalisation results generalise. More specifically, we evaluate a model's performance across multiple OOD testsets throughout a finetuning run; we then evaluate the partial correlation of performances across these testsets, regressing out in-domain performance. This allows us to assess how correlated are generalisation performances once in-domain performance is controlled for. Analysing OLMo2 and OPT, we observe no overarching trend in generalisation results: the existence of a positive or negative correlation between any two OOD testsets depends strongly on the specific choice of model analysed.},
+  annotation = {cs.CL - arXiv},
+  file = {files/127/Boglioni 等 - 2025 - Do Generalisation Results Generalise.pdf}
+}
+
+@misc{
+  title = {{{PaCoRe}}/Pacore\_report.Pdf at Main {$\cdot$} Stepfun-Ai/{{PaCoRe}}},
+  journal = {GitHub},
+  urldate = {2025-12-10},
+  abstract = {PaCoRe: Learning to Scale Test-Time Compute with Parallel Coordinated Reasoning - stepfun-ai/PaCoRe},
+  howpublished = {https://github.com/stepfun-ai/PaCoRe/blob/main/pacore\_report.pdf},
+  langid = {english}
+}
+
+@misc{
+  title = {Soft {{Adaptive Policy Optimization}}},
+  author = {Gao, Chang and Zheng, Chujie and Chen, Xiong-Hui and Dang, Kai and Liu, Shixuan and Yu, Bowen and Yang, An and Bai, Shuai and Zhou, Jingren and Lin, Junyang},
+  year = 2025,
+  month = dec,
+  number = {arXiv:2511.20347},
+  eprint = {2511.20347},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2511.20347},
+  urldate = {2025-12-10},
+  abstract = {Reinforcement learning (RL) plays an increasingly important role in enhancing the reasoning capabilities of large language models (LLMs), yet stable and performant policy optimization remains challenging. Token-level importance ratios often exhibit high variance-a phenomenon exacerbated in Mixture-of-Experts models-leading to unstable updates. Existing group-based policy optimization methods, such as GSPO and GRPO, alleviate this problem via hard clipping, making it difficult to maintain both stability and effective learning. We propose Soft Adaptive Policy Optimization (SAPO), which replaces hard clipping with a smooth, temperature-controlled gate that adaptively attenuates off-policy updates while preserving useful learning signals. Compared with GSPO and GRPO, SAPO is both sequence-coherent and token-adaptive. Like GSPO, SAPO maintains sequence-level coherence, but its soft gating forms a continuous trust region that avoids the brittle hard clipping band used in GSPO. When a sequence contains a few highly off-policy tokens, GSPO suppresses all gradients for that sequence, whereas SAPO selectively down-weights only the offending tokens and preserves the learning signal from the near-on-policy ones, improving sample efficiency. Relative to GRPO, SAPO replaces hard token-level clipping with smooth, temperature-controlled scaling, enabling more informative and stable updates. Empirical results on mathematical reasoning benchmarks indicate that SAPO exhibits improved training stability and higher Pass@1 performance under comparable training budgets. Moreover, we employ SAPO to train the Qwen3-VL model series, demonstrating that SAPO yields consistent performance gains across diverse tasks and different model sizes. Overall, SAPO provides a more reliable, scalable, and effective optimization strategy for RL training of LLMs.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {files/124/Gao 等 - 2025 - Soft Adaptive Policy Optimization.pdf;files/122/2511.html}
+}
+
+@misc{
+  title = {{【实测+解读】GPT5.2发布：74\%的打工人任务，被AI攻克了\_哔哩哔哩\_bilibili}},
+  author = {{AI进化论-花生}},
+  urldate = {2025-12-12},
+  abstract = {今天凌晨，OpenAI发布GPT-5.2模型，仅距离5.1发布不到一个月。这次更新最大的亮点是在GDPval指标上从38.8\%暴涨到74.1\%------这意味着在74\%的知识型工作任务中，AI已经能达到甚至超越拥有14年经验的专家水平。GDPval是OpenAI提出的全新评估体系，覆盖美国GDP前九大产业的44个职业领域，包括律师、医生、工程师、文员等，测试任务涵盖1,320项真实工作场景。但GPT-5, 视频播放量 7053、弹幕量 15、点赞数 132、投硬币枚数 22、收藏人数 104、转发人数 49, 视频作者 AI进化论-花生, 作者简介 AppStore付费榜Top1「小猫补光灯」app开发者。，相关视频：GPT5.2再次发布把Gemini3pro踢飞，一句话让GPT5.2写游戏，GPT5.2再次发布！把Gemini3pro踢飞，一句话让GPT5.2写游戏！，匆忙上马的GPT5.2，救得了奥特曼吗？，GPT-5.2来了！实测对比Opus 4.5，结果让我意外 \textbar{} Cursor Plan模式真香，GPT5.2亮点解读，OpenAI重夺年度最强，GPT-5.2 到底强在哪？关键信息 + 提示词技巧一集讲完，GPT5.2再次发布！把Gemini3pro踢飞，一句话让GPT5.2写游戏！，GPT5.2和GPT5.2high正在测试，智谱开源GLM TTS语音模型 \textbar{} 12月12日AI日报第242期，Gemini刚赢两周「GPT5.2」就正面反杀❗️，全球十大AI免费无限制用！GPT5.1、Claude4.5、Grok4.1、Gemini3.0Pro、DeepSeek-R1、Qwen3 等统统白嫖！终身爽用！},
+  howpublished = {https://www.bilibili.com/video/BV1Aum5B8E72/},
+  langid = {chinese-simplified},
+  file = {files/137/BV1Aum5B8E72.html}
+}
+
+@misc{
+  title = {(2) {{Home}} / {{X}}},
+  year = 2025,
+  month = dec,
+  journal = {X (formerly Twitter)},
+  urldate = {2025-12-15},
+  howpublished = {https://x.com/jenzhuscott/status/2000227774418878529},
+  langid = {english},
+  file = {files/143/2000227774418878529.html}
+}
+
+@inproceedings{
+  title = {{{SCALAR}}: {{Self-Supervised Composition}} and {{Learning}} of {{Skills}} with {{LLM Planning}} and {{RL}}},
+  shorttitle = {{{SCALAR}}},
+  booktitle = {{{NeurIPS}} 2025 {{Workshop}} on {{Bridging Language}}, {{Agent}}, and {{World Models}} for {{Reasoning}} and {{Planning}}},
+  author = {Zabounidis, Renos and Wu, Yue and Stepputtis, Simon and Mitchell, Tom and Li, Yuanzhi and Sycara, Katia P.},
+  urldate = {2025-12-15},
+  langid = {american},
+  file = {files/142/Zabounidis 等 - SCALAR Self-Supervised Composition and Learning of Skills with LLM Planning and RL.pdf}
+}
+
+@misc{
+  title = {Agent-{{R1}}: {{Training Powerful LLM Agents}} with {{End-to-End Reinforcement Learning}}},
+  shorttitle = {Agent-{{R1}}},
+  author = {Cheng, Mingyue and Ouyang, Jie and Yu, Shuo and Yan, Ruiran and Luo, Yucong and Liu, Zirui and Wang, Daoyu and Liu, Qi and Chen, Enhong},
+  year = 2025,
+  month = nov,
+  number = {arXiv:2511.14460},
+  eprint = {2511.14460},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2511.14460},
+  urldate = {2025-12-25},
+  abstract = {Large Language Models (LLMs) are increasingly being explored for building Agents capable of active environmental interaction (e.g., via tool use) to solve complex problems. Reinforcement Learning (RL) is considered a key technology with significant potential for training such Agents; however, the effective application of RL to LLM Agents is still in its nascent stages and faces considerable challenges. Currently, this emerging field lacks in-depth exploration into RL approaches specifically tailored for the LLM Agent context, alongside a scarcity of flexible and easily extensible training frameworks designed for this purpose. To help advance this area, this paper first revisits and clarifies Reinforcement Learning methodologies for LLM Agents by systematically extending the Markov Decision Process (MDP) framework to comprehensively define the key components of an LLM Agent. Secondly, we introduce Agent-R1, a modular, flexible, and user-friendly training framework for RL-based LLM Agents, designed for straightforward adaptation across diverse task scenarios and interactive environments. We conducted experiments on Multihop QA benchmark tasks, providing initial validation for the effectiveness of our proposed methods and framework.},
+  archiveprefix = {arXiv},
+  langid = {american},
+  keywords = {Computer Science - Computation and Language},
+  file = {files/207/Cheng 等 - 2025 - Agent-R1 Training Powerful LLM Agents with End-to-End Reinforcement Learning.pdf;files/206/2511.html}
+}
+
+@misc{
+  title = {Step-{{DeepResearch Technical Report}}},
+  author = {Hu, Chen and Du, Haikuo and Wang, Heng and Lin, Lin and Chen, Mingrui and Liu, Peng and Miao, Ruihang and Yue, Tianchi and You, Wang and Ji, Wei and Yuan, Wei and Deng, Wenjin and Yuan, Xiaojian and Zhang, Xiaoyun and Liu, Xiangyu and Liu, Xikai and Xu, Yanming and Cao, Yicheng and Zhang, Yifei and Wang, Yongyao and Shu, Yubo and Zhang, Yurong and Zhang, Yuxiang and Gong, Zheng and Chang, Zhichao and Li, Binyan and Ma, Dan and Jia, Furong and Wang, Hongyuan and Liu, Jiayu and Bai, Jing and Liu, Junlan and Liu, Manjiao and Wang, Na and Wu, Qiuping and Du, Qinxin and Li, Shiwei and Sun, Wen and Gong, Yifeng and Chen, Yonglin and Zhao, Yuling and Lin, Yuxuan and Ren, Ziqi and Wang, Zixuan and Zhang, Aihu and Li, Brian and Ma, Buyun and An, Kang and Xie, Li and Li, Mingliang and Li, Pan and Yang, Shidong and Chen, Xi and Liu, Xiaojia and Luo, Yuchu and Song, Yuan and Ding, YuanHao and Liang, Yuanwei and Li, Zexi and Zhang, Zhaoning and Zhang, Zixin and Jiao, Binxing and Jiang, Daxin and Chen, Jiansheng and Li, Jing and Zhang, Xiangyu and Zhu, Yibo},
+  year = 2025,
+  month = dec,
+  number = {arXiv:2512.20491},
+  eprint = {2512.20491},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2512.20491},
+  urldate = {2025-12-26},
+  abstract = {As LLMs shift toward autonomous agents, Deep Research has emerged as a pivotal metric. However, existing academic benchmarks like BrowseComp often fail to meet real-world demands for open-ended research, which requires robust skills in intent recognition, long-horizon decision-making, and cross-source verification. To address this, we introduce Step-DeepResearch, a cost-effective, end-to-end agent. We propose a Data Synthesis Strategy Based on Atomic Capabilities to reinforce planning and report writing, combined with a progressive training path from agentic mid-training to SFT and RL. Enhanced by a Checklist-style Judger, this approach significantly improves robustness. Furthermore, to bridge the evaluation gap in the Chinese domain, we establish ADR-Bench for realistic deep research scenarios. Experimental results show that Step-DeepResearch (32B) scores 61.4\% on Scale AI Research Rubrics. On ADR-Bench, it significantly outperforms comparable models and rivals SOTA closed-source models like OpenAI and Gemini DeepResearch. These findings prove that refined training enables medium-sized models to achieve expert-level capabilities at industry-leading cost-efficiency.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language},
+  file = {files/205/Hu 等 - 2025 - Step-DeepResearch Technical Report.pdf;files/204/2512.html}
+}
+
+@misc{
+  title = {Aman's {{AI Journal}} {$\bullet$} {{Primers}} {$\bullet$} {{Ilya Sutskever}}'s {{Top}} 30},
+  urldate = {2026-01-06},
+  howpublished = {https://aman.ai/primers/ai/top-30-papers/},
+  file = {files/202/top-30-papers.html}
+}
+
+@misc{
+  title = {2025，{{MCP}}、{{Agent}}、{{AI Coding}}},
+  author = {{idoubi}},
+  journal = {微信公众平台},
+  urldate = {2026-01-06},
+  abstract = {新的一年，少一些宏大叙事，多一些落地执行。},
+  howpublished = {https://mp.weixin.qq.com/s/obkKXZAEIsR3\_DCup\_kEsA},
+  file = {files/201/obkKXZAEIsR3_DCup_kEsA.html}
+}
+
+@article{
+  title = {{{DeepSeek-R1}}: {{Incentivizing Reasoning Capability}} in {{LLMs}} via {{Reinforcement Learning}}},
+  shorttitle = {{{DeepSeek-R1}}},
+  author = {{DeepSeek-AI} and Guo, Daya and Yang, Dejian and Zhang, Haowei and Song, Junxiao and Wang, Peiyi and Zhu, Qihao and Xu, Runxin and Zhang, Ruoyu and Ma, Shirong and Bi, Xiao and Zhang, Xiaokang and Yu, Xingkai and Wu, Yu and Wu, Z. F. and Gou, Zhibin and Shao, Zhihong and Li, Zhuoshu and Gao, Ziyi and Liu, Aixin and Xue, Bing and Wang, Bingxuan and Wu, Bochao and Feng, Bei and Lu, Chengda and Zhao, Chenggang and Deng, Chengqi and Zhang, Chenyu and Ruan, Chong and Dai, Damai and Chen, Deli and Ji, Dongjie and Li, Erhang and Lin, Fangyun and Dai, Fucong and Luo, Fuli and Hao, Guangbo and Chen, Guanting and Li, Guowei and Zhang, H. and Bao, Han and Xu, Hanwei and Wang, Haocheng and Ding, Honghui and Xin, Huajian and Gao, Huazuo and Qu, Hui and Li, Hui and Guo, Jianzhong and Li, Jiashi and Wang, Jiawei and Chen, Jingchang and Yuan, Jingyang and Qiu, Junjie and Li, Junlong and Cai, J. L. and Ni, Jiaqi and Liang, Jian and Chen, Jin and Dong, Kai and Hu, Kai and Gao, Kaige and Guan, Kang and Huang, Kexin and Yu, Kuai and Wang, Lean and Zhang, Lecong and Zhao, Liang and Wang, Litong and Zhang, Liyue and Xu, Lei and Xia, Leyi and Zhang, Mingchuan and Zhang, Minghua and Tang, Minghui and Li, Meng and Wang, Miaojun and Li, Mingming and Tian, Ning and Huang, Panpan and Zhang, Peng and Wang, Qiancheng and Chen, Qinyu and Du, Qiushi and Ge, Ruiqi and Zhang, Ruisong and Pan, Ruizhe and Wang, Runji and Chen, R. J. and Jin, R. L. and Chen, Ruyi and Lu, Shanghao and Zhou, Shangyan and Chen, Shanhuang and Ye, Shengfeng and Wang, Shiyu and Yu, Shuiping and Zhou, Shunfeng and Pan, Shuting and Li, S. S. and Zhou, Shuang and Wu, Shaoqing and Ye, Shengfeng and Yun, Tao and Pei, Tian and Sun, Tianyu and Wang, T. and Zeng, Wangding and Zhao, Wanjia and Liu, Wen and Liang, Wenfeng and Gao, Wenjun and Yu, Wenqin and Zhang, Wentao and Xiao, W. L. and An, Wei and Liu, Xiaodong and Wang, Xiaohan and Chen, Xiaokang and Nie, Xiaotao and Cheng, Xin and Liu, Xin and Xie, Xin and Liu, Xingchao and Yang, Xinyu and Li, Xinyuan and Su, Xuecheng and Lin, Xuheng and Li, X. Q. and Jin, Xiangyue and Shen, Xiaojin and Chen, Xiaosha and Sun, Xiaowen and Wang, Xiaoxiang and Song, Xinnan and Zhou, Xinyi and Wang, Xianzu and Shan, Xinxia and Li, Y. K. and Wang, Y. Q. and Wei, Y. X. and Zhang, Yang and Xu, Yanhong and Li, Yao and Zhao, Yao and Sun, Yaofeng and Wang, Yaohui and Yu, Yi and Zhang, Yichao and Shi, Yifan and Xiong, Yiliang and He, Ying and Piao, Yishi and Wang, Yisong and Tan, Yixuan and Ma, Yiyang and Liu, Yiyuan and Guo, Yongqiang and Ou, Yuan and Wang, Yuduan and Gong, Yue and Zou, Yuheng and He, Yujia and Xiong, Yunfan and Luo, Yuxiang and You, Yuxiang and Liu, Yuxuan and Zhou, Yuyang and Zhu, Y. X. and Xu, Yanhong and Huang, Yanping and Li, Yaohui and Zheng, Yi and Zhu, Yuchen and Ma, Yunxian and Tang, Ying and Zha, Yukun and Yan, Yuting and Ren, Z. Z. and Ren, Zehui and Sha, Zhangli and Fu, Zhe and Xu, Zhean and Xie, Zhenda and Zhang, Zhengyan and Hao, Zhewen and Ma, Zhicheng and Yan, Zhigang and Wu, Zhiyu and Gu, Zihui and Zhu, Zijia and Liu, Zijun and Li, Zilin and Xie, Ziwei and Song, Ziyang and Pan, Zizheng and Huang, Zhen and Xu, Zhipeng and Zhang, Zhongyu and Zhang, Zhen},
+  year = 2025,
+  month = sep,
+  journal = {Nature},
+  volume = {645},
+  number = {8081},
+  eprint = {2501.12948},
+  primaryclass = {cs},
+  pages = {633--638},
+  issn = {0028-0836, 1476-4687},
+  doi = {10.1038/s41586-025-09422-z},
+  urldate = {2026-01-09},
+  abstract = {General reasoning represents a long-standing and formidable challenge in artificial intelligence. Recent breakthroughs, exemplified by large language models (LLMs) and chain-of-thought prompting, have achieved considerable success on foundational reasoning tasks. However, this success is heavily contingent upon extensive human-annotated demonstrations, and models' capabilities are still insufficient for more complex problems. Here we show that the reasoning abilities of LLMs can be incentivized through pure reinforcement learning (RL), obviating the need for human-labeled reasoning trajectories. The proposed RL framework facilitates the emergent development of advanced reasoning patterns, such as self-reflection, verification, and dynamic strategy adaptation. Consequently, the trained model achieves superior performance on verifiable tasks such as mathematics, coding competitions, and STEM fields, surpassing its counterparts trained via conventional supervised learning on human demonstrations. Moreover, the emergent reasoning patterns exhibited by these large-scale models can be systematically harnessed to guide and enhance the reasoning capabilities of smaller models.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {files/200/DeepSeek-AI 等 - 2025 - DeepSeek-R1 Incentivizing Reasoning Capability in LLMs via Reinforcement Learning.pdf;files/199/2501.html}
+}
+
+@misc{
+  title = {{{DeepSeek-V2}}: {{A Strong}}, {{Economical}}, and {{Efficient Mixture-of-Experts Language Model}}},
+  shorttitle = {{{DeepSeek-V2}}},
+  author = {{DeepSeek-AI} and Liu, Aixin and Feng, Bei and Wang, Bin and Wang, Bingxuan and Liu, Bo and Zhao, Chenggang and Dengr, Chengqi and Ruan, Chong and Dai, Damai and Guo, Daya and Yang, Dejian and Chen, Deli and Ji, Dongjie and Li, Erhang and Lin, Fangyun and Luo, Fuli and Hao, Guangbo and Chen, Guanting and Li, Guowei and Zhang, H. and Xu, Hanwei and Yang, Hao and Zhang, Haowei and Ding, Honghui and Xin, Huajian and Gao, Huazuo and Li, Hui and Qu, Hui and Cai, J. L. and Liang, Jian and Guo, Jianzhong and Ni, Jiaqi and Li, Jiashi and Chen, Jin and Yuan, Jingyang and Qiu, Junjie and Song, Junxiao and Dong, Kai and Gao, Kaige and Guan, Kang and Wang, Lean and Zhang, Lecong and Xu, Lei and Xia, Leyi and Zhao, Liang and Zhang, Liyue and Li, Meng and Wang, Miaojun and Zhang, Mingchuan and Zhang, Minghua and Tang, Minghui and Li, Mingming and Tian, Ning and Huang, Panpan and Wang, Peiyi and Zhang, Peng and Zhu, Qihao and Chen, Qinyu and Du, Qiushi and Chen, R. J. and Jin, R. L. and Ge, Ruiqi and Pan, Ruizhe and Xu, Runxin and Chen, Ruyi and Li, S. S. and Lu, Shanghao and Zhou, Shangyan and Chen, Shanhuang and Wu, Shaoqing and Ye, Shengfeng and Ma, Shirong and Wang, Shiyu and Zhou, Shuang and Yu, Shuiping and Zhou, Shunfeng and Zheng, Size and Wang, T. and Pei, Tian and Yuan, Tian and Sun, Tianyu and Xiao, W. L. and Zeng, Wangding and An, Wei and Liu, Wen and Liang, Wenfeng and Gao, Wenjun and Zhang, Wentao and Li, X. Q. and Jin, Xiangyue and Wang, Xianzu and Bi, Xiao and Liu, Xiaodong and Wang, Xiaohan and Shen, Xiaojin and Chen, Xiaokang and Chen, Xiaosha and Nie, Xiaotao and Sun, Xiaowen and Wang, Xiaoxiang and Liu, Xin and Xie, Xin and Yu, Xingkai and Song, Xinnan and Zhou, Xinyi and Yang, Xinyu and Lu, Xuan and Su, Xuecheng and Wu, Y. and Li, Y. K. and Wei, Y. X. and Zhu, Y. X. and Xu, Yanhong and Huang, Yanping and Li, Yao and Zhao, Yao and Sun, Yaofeng and Li, Yaohui and Wang, Yaohui and Zheng, Yi and Zhang, Yichao and Xiong, Yiliang and Zhao, Yilong and He, Ying and Tang, Ying and Piao, Yishi and Dong, Yixin and Tan, Yixuan and Liu, Yiyuan and Wang, Yongji and Guo, Yongqiang and Zhu, Yuchen and Wang, Yuduan and Zou, Yuheng and Zha, Yukun and Ma, Yunxian and Yan, Yuting and You, Yuxiang and Liu, Yuxuan and Ren, Z. Z. and Ren, Zehui and Sha, Zhangli and Fu, Zhe and Huang, Zhen and Zhang, Zhen and Xie, Zhenda and Hao, Zhewen and Shao, Zhihong and Wen, Zhiniu and Xu, Zhipeng and Zhang, Zhongyu and Li, Zhuoshu and Wang, Zihan and Gu, Zihui and Li, Zilin and Xie, Ziwei},
+  year = 2024,
+  publisher = {arXiv},
+  doi = {10.48550/ARXIV.2405.04434},
+  urldate = {2026-01-09},
+  abstract = {We present DeepSeek-V2, a strong Mixture-of-Experts (MoE) language model characterized by economical training and efficient inference. It comprises 236B total parameters, of which 21B are activated for each token, and supports a context length of 128K tokens. DeepSeek-V2 adopts innovative architectures including Multi-head Latent Attention (MLA) and DeepSeekMoE. MLA guarantees efficient inference through significantly compressing the Key-Value (KV) cache into a latent vector, while DeepSeekMoE enables training strong models at an economical cost through sparse computation. Compared with DeepSeek 67B, DeepSeek-V2 achieves significantly stronger performance, and meanwhile saves 42.5\% of training costs, reduces the KV cache by 93.3\%, and boosts the maximum generation throughput to 5.76 times. We pretrain DeepSeek-V2 on a high-quality and multi-source corpus consisting of 8.1T tokens, and further perform Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) to fully unlock its potential. Evaluation results show that, even with only 21B activated parameters, DeepSeek-V2 and its chat versions still achieve top-tier performance among open-source models.},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  keywords = {Artificial Intelligence (cs.AI),Computation and Language (cs.CL),FOS: Computer and information sciences}
+}
+
+@misc{
+  title = {{{GitHub}} 上 2300 点赞的搜索 {{Agent}}，有点惊艳啊。},
+  urldate = {2026-01-09},
+  howpublished = {https://mp.weixin.qq.com/s/FEJtibpzlG3\_pUKMHR0NiA},
+  file = {files/198/FEJtibpzlG3_pUKMHR0NiA.html}
+}
+
+@misc{
+  title = {Executable {{Code Actions Elicit Better LLM Agents}}},
+  author = {Wang, Xingyao and Chen, Yangyi and Yuan, Lifan and Zhang, Yizhe and Li, Yunzhu and Peng, Hao and Ji, Heng},
+  year = 2024,
+  month = jun,
+  number = {arXiv:2402.01030},
+  eprint = {2402.01030},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2402.01030},
+  urldate = {2026-01-12},
+  abstract = {Large Language Model (LLM) agents, capable of performing a broad range of actions, such as invoking tools and controlling robots, show great potential in tackling real-world challenges. LLM agents are typically prompted to produce actions by generating JSON or text in a pre-defined format, which is usually limited by constrained action space (e.g., the scope of pre-defined tools) and restricted flexibility (e.g., inability to compose multiple tools). This work proposes to use executable Python code to consolidate LLM agents' actions into a unified action space (CodeAct). Integrated with a Python interpreter, CodeAct can execute code actions and dynamically revise prior actions or emit new actions upon new observations through multi-turn interactions. Our extensive analysis of 17 LLMs on API-Bank and a newly curated benchmark shows that CodeAct outperforms widely used alternatives (up to 20\% higher success rate). The encouraging performance of CodeAct motivates us to build an open-source LLM agent that interacts with environments by executing interpretable code and collaborates with users using natural language. To this end, we collect an instruction-tuning dataset CodeActInstruct that consists of 7k multi-turn interactions using CodeAct. We show that it can be used with existing data to improve models in agent-oriented tasks without compromising their general capability. CodeActAgent, finetuned from Llama2 and Mistral, is integrated with Python interpreter and uniquely tailored to perform sophisticated tasks (e.g., model training) using existing libraries and autonomously self-debug.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
+  file = {files/196/Wang 等 - 2024 - Executable Code Actions Elicit Better LLM Agents.pdf;files/195/2402.html}
+}
+
+@misc{
+  title = {Engram/{{Engram}}\_paper.Pdf at Main {$\cdot$} Deepseek-Ai/{{Engram}}},
+  journal = {GitHub},
+  urldate = {2026-01-13},
+  abstract = {Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models - deepseek-ai/Engram},
+  howpublished = {https://github.com/deepseek-ai/Engram/blob/main/Engram\_paper.pdf},
+  langid = {english},
+  file = {files/194/Engram_paper.html}
+}
+
+@misc{
+  title = {{{DeepSeek Engram}}：条件记忆------大语言模型稀疏性的新维度},
+  urldate = {2026-01-13},
+  howpublished = {https://swim.kcores.com/Conditional\%20Memory\%20via\%20Scalable\%20Lookup\%20A\%20New\%20Axis\%20of\%20Sparsity\%20for\%20Large\%20Language\%20Models/},
+  file = {files/193/Conditional Memory via Scalable Lookup A New Axis of Sparsity for Large Language Models.html}
+}
+
+@misc{
+  title = {Blog/Moe.Md at Main {$\cdot$} Huggingface/Blog},
+  journal = {GitHub},
+  urldate = {2026-01-13},
+  abstract = {Public repo for HF blog posts. Contribute to huggingface/blog development by creating an account on GitHub.},
+  howpublished = {https://github.com/huggingface/blog/blob/main/moe.md},
+  langid = {english},
+  file = {files/192/moe.html}
+}
+
+@misc{
+  title = {{{EvoAgent}}: {{Towards Automatic Multi-Agent Generation}} via {{Evolutionary Algorithms}}},
+  shorttitle = {{{EvoAgent}}},
+  author = {Yuan, Siyu and Song, Kaitao and Chen, Jiangjie and Tan, Xu and Li, Dongsheng and Yang, Deqing},
+  year = 2025,
+  month = mar,
+  number = {arXiv:2406.14228},
+  eprint = {2406.14228},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2406.14228},
+  urldate = {2026-01-21},
+  abstract = {The rise of powerful large language models (LLMs) has spurred a new trend in building LLM-based autonomous agents for solving complex tasks, especially multi-agent systems. Despite the remarkable progress, we notice that existing works are heavily dependent on human-designed frameworks, which greatly limits the functional scope and scalability of agent systems. How to automatically extend the specialized agent to multi-agent systems to improve task-solving capability still remains a significant challenge. In this paper, we introduce EvoAgent, a generic method to automatically extend specialized agents to multi-agent systems via the evolutionary algorithm, thereby improving the effectiveness of LLM-based agents in solving tasks. Specifically, we consider the existing agent frameworks as the initial individual and then apply a series of evolutionary operators (e.g., mutation, crossover, selection, etc.) to generate multiple agents with diverse settings. Experimental results across various tasks show that EvoAgent can significantly enhance the task-solving capability of LLM-based agents, and can be generalized to any LLM-based agent framework to extend them into multi-agent systems. Resources are available at https://evo-agent.github.io/.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence},
+  file = {files/189/Yuan 等 - 2025 - EvoAgent Towards Automatic Multi-Agent Generation via Evolutionary Algorithms.pdf;files/190/2406.html}
+}
+
+@misc{
+  title = {Agentic {{Reasoning}} for {{Large Language Models}}},
+  author = {Wei, Tianxin and Li, Ting-Wei and Liu, Zhining and Ning, Xuying and Yang, Ze and Zou, Jiaru and Zeng, Zhichen and Qiu, Ruizhong and Lin, Xiao and Fu, Dongqi and Li, Zihao and Ai, Mengting and Zhou, Duo and Bao, Wenxuan and Li, Yunzhe and Li, Gaotang and Qian, Cheng and Wang, Yu and Tang, Xiangru and Xiao, Yin and Fang, Liri and Liu, Hui and Tang, Xianfeng and Zhang, Yuji and Wang, Chi and You, Jiaxuan and Ji, Heng and Tong, Hanghang and He, Jingrui},
+  year = 2026,
+  month = jan,
+  number = {arXiv:2601.12538},
+  eprint = {2601.12538},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2601.12538},
+  urldate = {2026-01-24},
+  abstract = {Reasoning is a fundamental cognitive process underlying inference, problem-solving, and decision-making. While large language models (LLMs) demonstrate strong reasoning capabilities in closed-world settings, they struggle in open-ended and dynamic environments. Agentic reasoning marks a paradigm shift by reframing LLMs as autonomous agents that plan, act, and learn through continual interaction. In this survey, we organize agentic reasoning along three complementary dimensions. First, we characterize environmental dynamics through three layers: foundational agentic reasoning, which establishes core single-agent capabilities including planning, tool use, and search in stable environments; self-evolving agentic reasoning, which studies how agents refine these capabilities through feedback, memory, and adaptation; and collective multi-agent reasoning, which extends intelligence to collaborative settings involving coordination, knowledge sharing, and shared goals. Across these layers, we distinguish in-context reasoning, which scales test-time interaction through structured orchestration, from post-training reasoning, which optimizes behaviors via reinforcement learning and supervised fine-tuning. We further review representative agentic reasoning frameworks across real-world applications and benchmarks, including science, robotics, healthcare, autonomous research, and mathematics. This survey synthesizes agentic reasoning methods into a unified roadmap bridging thought and action, and outlines open challenges and future directions, including personalization, long-horizon interaction, world modeling, scalable multi-agent training, and governance for real-world deployment.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
+  file = {files/187/2601.html}
+}
+
+@misc{
+  title = {Prompt {{Repetition Improves Non-Reasoning LLMs}}},
+  author = {Leviathan, Yaniv and Kalman, Matan and Matias, Yossi},
+  year = 2025,
+  month = dec,
+  number = {arXiv:2512.14982},
+  eprint = {2512.14982},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2512.14982},
+  urldate = {2026-01-26},
+  abstract = {When not using reasoning, repeating the input prompt improves performance for popular models (Gemini, GPT, Claude, and Deepseek) without increasing the number of generated tokens or latency.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {files/186/Leviathan 等 - 2025 - Prompt Repetition Improves Non-Reasoning LLMs.pdf;files/185/2512.html}
+}
+
+@article{
+  title = {Conditional {{Memory}} via {{Scalable Lookup}}: {{A New Axis}} of {{Sparsity}} for {{Large Language Models}}},
+  author = {Cheng, Xin and Zeng, Wangding and Dai, Damai and Chen, Qinyu and Wang, Bingxuan and Xie, Zhenda and Huang, Kezhao and Yu, Xingkai and Hao, Zhewen and Li, Yukun and Zhang, Han and Zhang, Huishuai and Zhao, Dongyan and Liang, Wenfeng},
+  langid = {english},
+  file = {files/184/Cheng 等 - Conditional Memory via Scalable Lookup A New Axis of Sparsity for Large Language Models.pdf}
+}
+
+@misc{
+  title = {{{PaddleOCR-VL-1}}.5: {{Towards}} a {{Multi-Task}} 0.{{9B VLM}} for {{Robust In-the-Wild Document Parsing}}},
+  shorttitle = {{{PaddleOCR-VL-1}}.5},
+  author = {Cui, Cheng and Sun, Ting and Liang, Suyin and Gao, Tingquan and Zhang, Zelun and Liu, Jiaxuan and Wang, Xueqing and Zhou, Changda and Liu, Hongen and Lin, Manhui and Zhang, Yue and Zhang, Yubo and Liu, Yi and Yu, Dianhai and Ma, Yanjun},
+  year = 2026,
+  month = jan,
+  number = {arXiv:2601.21957},
+  eprint = {2601.21957},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2601.21957},
+  urldate = {2026-02-10},
+  abstract = {We introduce PaddleOCR-VL-1.5, an upgraded model achieving a new state-of-the-art (SOTA) accuracy of 94.5\% on OmniDocBench v1.5. To rigorously evaluate robustness against real-world physical distortions, including scanning, skew, warping, screen-photography, and illumination, we propose the Real5-OmniDocBench benchmark. Experimental results demonstrate that this enhanced model attains SOTA performance on the newly curated benchmark. Furthermore, we extend the model's capabilities by incorporating seal recognition and text spotting tasks, while remaining a 0.9B ultra-compact VLM with high efficiency. Code: https://github.com/PaddlePaddle/PaddleOCR},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {files/170/Cui 等 - 2026 - PaddleOCR-VL-1.5 Towards a Multi-Task 0.9B VLM for Robust In-the-Wild Document Parsing.pdf;files/171/2601.html}
+}
+
+@misc{
+  title = {{【AgentRL】工业级Agentic RL 训练对比选型指南}},
+  journal = {知乎专栏},
+  urldate = {2026-02-10},
+  abstract = {这篇博客想法诞生于上半年基于 trl / verl 魔改 agentic rl 时期，但拖延一直搁置。眼看相关技术栈演进速度惊人，再不发出来就要过气了，于是决定抛砖引玉分享。预计本系列还会分别基于一线魔改的开发者经验，在后\dots},
+  howpublished = {https://zhuanlan.zhihu.com/p/1978600046514685178},
+  langid = {chinese},
+  file = {files/169/1978600046514685178.html}
+}
+
+@misc{
+  title = {{Kimi K2.5 技术报告阅读笔记}},
+  journal = {知乎专栏},
+  urldate = {2026-02-10},
+  abstract = {先说架构，预训练，后训练，reward system设计，PPO算法改进，后面再说一些有意思的细节设计和finding。 模型结构：MoonViT-3D + MLP + K2 MoE LLMMoonViT-3D：从 SigLIP-SO-400M初始化，对于video，把连续 4 帧视\dots},
+  howpublished = {https://zhuanlan.zhihu.com/p/2000719027690030326},
+  langid = {chinese},
+  file = {files/168/2000719027690030326.html}
+}
+
+@misc{
+  title = {💥【{{Multi Sub}}】💥【新番无删减版】💥【完了啊！女帝的软饭丈夫竟然无敌】💥{{EP1-EP137}},,林玄穿越女尊世界，绑定「软饭成神系统」------躺平越久战力越强！\#漫剧热播  \#动态漫 \#热血},
+  year = 2026,
+  month = feb,
+  urldate = {2026-02-13},
+  abstract = {\#アイドル \#YOASOBI \#推しの子 \#idol Hope you enjoy my videos! :) Instagram：makuri0731 Bilibili：https://b23.tv/n0BN7RB},
+  collaborator = {{次元漫畫社Transcendia Comics}}
+}
+
+@misc{
+  title = {{目前较低成本codingplan方案推荐（通吃glm-5、kimi、qwen3.5）\textbar 附claude、opencode配置方法\_哔哩哔哩\_bilibili}},
+  author = {麦麦大数据},
+  urldate = {2026-02-25},
+  abstract = {目前较低成本codingplan方案推荐（通吃glm-5、kimi、qwen3.5）\textbar 附claude、opencode配置方法。, 视频播放量 3750、弹幕量 0、点赞数 29、投硬币枚数 2、收藏人数 85、转发人数 9, 视频作者 麦麦大数据, 作者简介 全栈定制+Q 81040295 、python、java、Vue、专业搞定AI、智能体、算法和可视化等项目，相关视频：智谱官网不做人！教你最低成本使用GLM5，GLM-5真实测评，直接劝退！，OpenCode彻底碾压了所有编程应用（简直疯狂），GLM-5/Kimi-K2.5/Minimax-2.5 模型在复杂Agent任务下的对比测试，OpenCode 取消免费模型后，我含泪冲了年包，结果 token 消耗让我傻眼了！\#opencode \#glm4.7 \#vibecoding，OpenCode桌面版：地表最强AI编程助手！免费开源，告别Gemini-Claude！，实测 GLM 5 多场景对标 Claude Opus 4.5/4.6 在 Claude Code 的差距，解读EvoMap(Evolver)，让Openclaw自我进化的神秘机制，OpenCode 免费调用Kimi K2.5大模型，测完Qwen3.5，我哭了，期待了好久的场景终于实现了},
+  howpublished = {https://www.bilibili.com/video/BV1mDfsBhEZo/},
+  langid = {chinese-simplified},
+  file = {files/219/BV1mDfsBhEZo.html}
+}
+
+@misc{
+  title = {{中文教程}},
+  year = 2026,
+  month = feb,
+  journal = {OpenCode},
+  urldate = {2026-02-25},
+  abstract = {开始使用 OpenCode。},
+  howpublished = {https://opencode.ai/docs/zh-cn/},
+  langid = {chinese},
+  file = {files/221/zh-cn.html}
+}
+
+@misc{
+  title = {大厂集体押注 {{SDD}}！阿里、腾讯、亚马逊都在用的规范驱动开发，优势在哪？坑怎么避？},
+  author = {博客精选, {\relax AI}},
+  journal = {微信公众平台},
+  urldate = {2026-02-27},
+  abstract = {随着越来越多头部厂商的采用，规范驱动开发正成为 AI 编程中的新兴范式。本文深入探讨 SDD 的核心概念，将其划分为规范优先、规范锚定和规范即源码三个层次，分析该方法在实践中的优势与挑战。},
+  howpublished = {https://mp.weixin.qq.com/s/Jv9jFm5Li-Qna5gcpKnbUw},
+  file = {files/231/Jv9jFm5Li-Qna5gcpKnbUw.html}
+}
+
+@misc{
+  title = {Sharing My {{Zotero-MCP}} + {{Claude Skill}} Setup},
+  year = 2025,
+  month = nov,
+  journal = {Zotero Forums},
+  urldate = {2026-02-28},
+  abstract = {Zotero is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share research.},
+  howpublished = {https://forums.zotero.org/discussion/127943/sharing-my-zotero-mcp-claude-skill-setup},
+  langid = {english},
+  file = {files/234/sharing-my-zotero-mcp-claude-skill-setup.html}
+}
+
+@misc{huMemoryAgeAI2025,
+  title = {Memory in the {{Age}} of {{AI Agents}}},
+  author = {Hu, Yuyang and Liu, Shichun and Yue, Yanwei and Zhang, Guibin and Liu, Boyang and Zhu, Fangyi and Lin, Jiahang and Guo, Honglin and Dou, Shihan and Xi, Zhiheng and Jin, Senjie and Tan, Jiejun and Yin, Yanbin and Liu, Jiongnan and Zhang, Zeyu and Sun, Zhongxiang and Zhu, Yutao and Sun, Hao and Peng, Boci and Cheng, Zhenrong and Fan, Xuanbo and Guo, Jiaxin and Yu, Xinlei and Zhou, Zhenhong and Hu, Zewen and Huo, Jiahao and Wang, Junhao and Niu, Yuwei and Wang, Yu and Yin, Zhenfei and Hu, Xiaobin and Liao, Yue and Li, Qiankun and Wang, Kun and Zhou, Wangchunshu and Liu, Yixin and Cheng, Dawei and Zhang, Qi and Gui, Tao and Pan, Shirui and Zhang, Yan and Torr, Philip and Dou, Zhicheng and Wen, Ji-Rong and Huang, Xuanjing and Jiang, Yu-Gang and Yan, Shuicheng},
+  year = 2025,
+  month = dec,
+  number = {arXiv:2512.13564},
+  eprint = {2512.13564},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2512.13564},
+  urldate = {2026-01-05},
+  abstract = {Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Agent,Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
+  file = {files/203/Hu 等 - 2025 - Memory in the Age of AI Agents.pdf}
+}
+
+@misc{liuUnderstandingR1ZeroLikeTraining2025,
+  title = {Understanding {{R1-Zero-Like Training}}: {{A Critical Perspective}}},
+  shorttitle = {Understanding {{R1-Zero-Like Training}}},
+  author = {Liu, Zichen and Chen, Changyu and Li, Wenjun and Qi, Penghui and Pang, Tianyu and Du, Chao and Lee, Wee Sun and Lin, Min},
+  year = 2025,
+  month = oct,
+  number = {arXiv:2503.20783},
+  eprint = {2503.20783},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2503.20783},
+  urldate = {2025-12-02},
+  abstract = {DeepSeek-R1-Zero has shown that reinforcement learning (RL) at scale can directly enhance the reasoning capabilities of LLMs without supervised fine-tuning. In this work, we critically examine R1-Zero-like training by analyzing its two core components: base models and RL. We investigate a wide range of base models, including DeepSeek-V3-Base, to understand how pretraining characteristics influence RL performance. Our analysis reveals that DeepSeek-V3-Base already exhibit ''Aha moment'', while Qwen2.5 base models demonstrate strong reasoning capabilities even without prompt templates, suggesting potential pretraining biases. Additionally, we identify an optimization bias in Group Relative Policy Optimization (GRPO), which artificially increases response length (especially for incorrect outputs) during training. To address this, we introduce Dr. GRPO, an unbiased optimization method that improves token efficiency while maintaining reasoning performance. Leveraging these insights, we present a minimalist R1-Zero recipe that achieves 43.3\% accuracy on AIME 2024 with a 7B base model, establishing a new state-of-the-art. Our code is available at https://github.com/sail-sg/understand-r1-zero.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {files/81/Liu 等 - 2025 - Understanding R1-Zero-Like Training A Critical Perspective.pdf;files/80/2503.html}
+}
