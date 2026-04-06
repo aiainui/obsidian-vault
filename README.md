@@ -4,8 +4,8 @@
 
 ### Agents
 - [[Agents/SocialKit/README|SocialKit]]
-- [[Agents/claude code/README|Claude Code]]
-- [[Agents/open code/README|Open Code]]
+- [[Agents/claudecode/README|Claude Code]]
+- [[Agents/opencode/README|Open Code]]
 - [[Agents/team agent/README|Team Agent]]
 - [[Agents/providers]]
 - [[Agents/travily介绍]]
